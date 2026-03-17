@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Ceasedrop</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    h1 { color: #111; }
+    h2 { margin-top: 2em; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Ceasedrop</h1>
+  <p><strong>Effective date:</strong> March 17, 2026</p>
+  <p>Ceasedrop ("we", "our", or "us") is a privacy-focused Android app that helps you understand which apps on your device have access to sensitive sensors like your microphone, camera, and location. This policy explains what data we access, what we collect, and how we use it.</p>
+
+  <h2>1. What Ceasedrop Accesses On Your Device</h2>
+  <p>Ceasedrop reads the following information <strong>locally on your device</strong> to perform its privacy scan:</p>
+  <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>Installed app list and granted permissions</td><td>To identify which apps have microphone, camera, or location access</td></tr>
+    <tr><td>Usage Stats (foreground/background app activity)</td><td>To show which apps were recently active — requires you to grant Usage Access permission</td></tr>
+    <tr><td>Device sensors (camera, microphone, location)</td><td>Ceasedrop checks permission grants only — it does not activate or record from these sensors</td></tr>
+  </table>
+  <p>All scan results are stored <strong>only on your device</strong> in a local database. They are never uploaded to our servers.</p>
+
+  <h2>2. What We Collect</h2>
+  <h3>Account data (optional)</h3>
+  <p>If you create an account or sign in (via magic link or OAuth), we store your email address and an authentication token. This is handled by <a href="https://supabase.com">Supabase</a>, our authentication provider. We do not store passwords. You can delete your account at any time.</p>
+  <h3>Subscription data</h3>
+  <p>If you purchase a subscription or lifetime license, the transaction is processed entirely by <strong>Google Play</strong>. We receive only your subscription status (active, expired, etc.) — we never see your payment details.</p>
+  <h3>Crash and diagnostic data</h3>
+  <p>We do not currently collect crash reports or analytics.</p>
+
+  <h2>3. What We Do NOT Collect</h2>
+  <ul>
+    <li>We do not record audio, video, or location data from your device</li>
+    <li>We do not upload your installed app list or scan results to any server</li>
+    <li>We do not sell your data to third parties</li>
+    <li>We do not track you across other apps or websites</li>
+    <li>We do not use advertising SDKs</li>
+  </ul>
+
+  <h2>4. Background Processing</h2>
+  <p>With your permission, Ceasedrop can run a scheduled background scan using Android's WorkManager. This scan reads the same on-device data described in Section 1. No data from background scans leaves your device.</p>
+  <p>The app also listens for the device boot event solely to reschedule your background scan if you had it enabled.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+    <tr><td>Supabase</td><td>Authentication (email magic link / OAuth)</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+    <tr><td>Google Play Billing</td><td>Subscription and in-app purchase processing</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  </table>
+
+  <h2>6. Data Retention</h2>
+  <ul>
+    <li><strong>Scan results</strong> are stored locally on your device and can be cleared by uninstalling the app</li>
+    <li><strong>Account data</strong> is retained until you delete your account</li>
+    <li><strong>Subscription status</strong> is managed by Google Play</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
+  <p>Ceasedrop is not directed at children under 13 and we do not knowingly collect personal information from children.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>If we make material changes to this policy, we will update the effective date above and notify users through the app or the Play Store listing.</p>
+
+  <h2>9. Contact</h2>
+  <p>If you have questions about this privacy policy or your data, contact us at:</p>
+  <p><strong>Email:</strong> vwapster@gmail.com</p>
+
+  <hr>
+  <p><em>Ceasedrop is built to protect your privacy — we hold ourselves to the same standard we help you enforce on other apps.</em></p>
+</body>
+</html>
